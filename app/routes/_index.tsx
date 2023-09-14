@@ -1,41 +1,40 @@
-import type { V2_MetaFunction } from "@remix-run/node";
+import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
+import Header from "./homepage/header";
+import Banner from "./homepage/banner";
+import Slideshow from "./homepage/banner_slideshow";
+import OurGoals from "./homepage/our_goals";
+import SciTechLOC from "./homepage/scitech_loc";
+import RoboticLOC from "./homepage/robotic_loc";
+import ScitechCourses from "./homepage/courses_scitech";
+import RoboticCourses from "./homepage/courses_robotic";
+import JoinUs from "./homepage/join";
+import Footer from "./homepage/footer";
+import Copyright from "./homepage/copyright";
+import ContactUs from "./homepage/contact_us";
+
 
 export const meta: V2_MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Nikola Academy" },
+    { name: "Discover, Innovate, Invent", content: "Investing on future generation of all-rounded scientist, innovators, and inventors through comprehensive STEM learning" },
   ];
 };
 
-export default function Index() {
+export default function HomePage() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
+    <div>
+      <Header/>
+      <Banner/>
+      <Slideshow/>
+      <OurGoals/>
+      <ScitechCourses/>
+      <SciTechLOC/>
+      <RoboticCourses/>
+      <RoboticLOC/>
+      <JoinUs/>
+      <Footer/>
+      <Copyright/>
+      <ContactUs/>
     </div>
   );
 }

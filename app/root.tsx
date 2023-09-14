@@ -1,4 +1,3 @@
-import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction } from "@remix-run/node";
 import {
   Links,
@@ -8,14 +7,13 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import styles from "./styles/app.css"
 
-// export const links: LinksFunction = () => [
-//   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
-// ];
+import dummy_styles from "./styles/app.css"
 
-export function links() {
-  return [{ rel: "stylesheet", href: styles }]
+export const links: LinksFunction = () => {
+  return[
+    { rel: "stylesheet", href: dummy_styles }
+  ]
 }
 
 export default function App() {
@@ -27,7 +25,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="bg-teal-700 text-white">
+      <body>
         <Outlet />
         <ScrollRestoration />
         <Scripts />

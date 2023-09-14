@@ -225,10 +225,10 @@ function RoboticLOC({ }: RoboticLOC) {
                     </div>
                 </div>
             </div>
-            <div id="coming-soon-robotic" className="coming-soon-robotic">
+            {/* <div id="coming-soon-robotic" className="coming-soon-robotic">
                 COMING SOON!
-            </div>
-            <div className="price-container" id="price-container-robotic">
+            </div> */}
+            {/* <div className="price-container" id="price-container-robotic">
                 <div className="price-content" id="price-content">
                     <div className="price-title-robotic" id="price-title-robotic">
                         Robotics Basic
@@ -270,7 +270,7 @@ function RoboticLOC({ }: RoboticLOC) {
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div >
     );
 }

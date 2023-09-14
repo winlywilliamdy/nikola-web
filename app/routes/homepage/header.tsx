@@ -22,7 +22,7 @@ function Header({}: HeaderProps) {
       </div>
       <div className='expanded-whitespace'></div>
       <div className='menu-bar'>
-        <Link className='link-button' to='/'>
+        {/* <Link className='link-button' to='/'>
           <button type="button">
             Home
           </button>
@@ -41,7 +41,7 @@ function Header({}: HeaderProps) {
           <button type="button">
             Nikola Maker Shop
           </button>
-        </Link>
+        </Link> */}
       </div>
     </div >
   );

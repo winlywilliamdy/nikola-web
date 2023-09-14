@@ -227,7 +227,7 @@ function SciTechLOC({ }: SciTechLOC) {
                     </div>
                 </div>
             </div>
-            <div id = "coming-soon" className="coming-soon">
+            {/* <div id = "coming-soon" className="coming-soon">
                 COMING SOON!
             </div>
             <div className="price-container" id="price-container">
@@ -272,7 +272,7 @@ function SciTechLOC({ }: SciTechLOC) {
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div >
     );
 }
